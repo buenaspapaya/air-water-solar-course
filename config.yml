@@ -1,0 +1,16 @@
+title: Air- water solar
+description: Air to drinking water through solar
+template:
+  repo: air-water-solar-template
+  name: air-water-solar
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
